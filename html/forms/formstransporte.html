@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body style="background-color: rgb(194, 193, 143);">
+    <header>
+        <h1>Formulário de transporte</h1>
+    </header>
+    <article>
+        <form action="mailto:biamenezes193@gmail.com" method="post" oninput="resultado.value=parseInt(valor01.value)+parseInt(valor02.value)">
+            <!--label é uma etiqueta-->
+             <!--Para criar um contorno em cada tag se usa o <fieldset>-->
+            <fieldset>
+                <legend><strong>Identificação</strong></legend>
+                <!--legend funciona para colocar um titulo no contorno-->
+                <br>
+                <label for="Cnome">Nome</label> &nbsp;
+                <input type="text" name="nome" id="Cnome" size="50" required>
+                <!--required é para deixar o compo como obrigatório-->
+                <br> <br>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" size="50" placeholder="Exemplo@exemplo.com">
+                <!--placeholder serve como uma legendinha ou dica no campo-->
+                <br><br>
+                <p>Você mora:</p>
+                <input type="radio" name="lugar" id="city" value="C">
+                <label for="city">Cidade</label> 
+                <!--Se quiser deixar as opções na vertical é só fazer um br após o label-->
+                <input type="radio" name="lugar" id="downtown" value="C">
+                <label for="downtown">Interior</label>
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend><strong>Informações Extras</strong></legend>
+                <p>Qual meio de transporte você usa?</p>
+                <input type="checkbox" name="transporte1" id="bike" value="bike">
+                <label for="bike">Bicicleta</label>
+    
+                <input type="checkbox" name="transporte2" id="car" value="car">
+                <label for="car">Carro</label> 
+    
+                <input type="checkbox" name="transporte3" id="metro" value="metro">
+                <label for="metro">Metro</label>
+    
+                <input type="checkbox" name="transporte4" id="bus" value="bus">
+                <label for="bus">Ônibus</label>
+                <br> <br>
+                <!--Select cria uma lista de opções-->
+                <label for="game">Escolha seu tipo de jogo: </label>
+                <select name="game" id="game">
+                    <!--Option é as opções da lista-->
+                    <!--value são os valores de escolha-->
+                    <option value="fps">FPS</option>
+                    <option value="adv">Adventure</option>
+                    <option value="rpg">RPG</option>
+                    <option value="moba">M.O.B.A</option>
+                    <option value="sport">Sport's</option>
+                    <option value="Puzzle">Puzzle</option>
+                </select>
+                <br><br>
+                <!--Aqui inicia o datalist ou lista de dados-->
+                <label for="região">Escolha sua cidade:</label>
+                <input list="cidade" name="city2" id="região" placeholder="Digite sua cidade"> 
+                <datalist id="cidade">
+                    <!--id da datalist tem que ter o mesmo nome que aparece no list do respectivo input-->
+                    <option value="Recife"></option>
+                    <option value="Olinda"></option>
+                    <option value="Cabo de Santo Agostinho"></option>
+                    <option value="Paulista"></option>
+                    <option value="Moreno"></option>
+                    <option value="Camaragibe"></option>
+                    <option value="Jaboatão dos Guararapes"></option>
+                    <option value="Igarassu"></option>
+                    <option value="Ilha de Itamaracá"></option>
+                </datalist>
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend><strong>Avaliação</strong></legend>
+                <label for="valor01">O quanto você curtiu o formulário?</label>
+                <br> <br>
+                0<input type="range" name="valor01" id="valor01"> 100
+                <input type="number" name="valor02" id="valor02" value="10">
+                <output name="resultado" id="resultado" ></output>
+                <!--type="range" forma o 'fofurômetro'-->
+                <br>
+                <p>Sugestóes, elogios e críticas</p>
+                <textarea name="msg" cols="45" rows="10" placeholder="Digite aqui :)" req></textarea>
+                <!--cols : colunas
+                    rows : linhas
+                    esses atributos definem o tamanho do textarea
+                    -->
+                <br><br>
+                <div style="text-align: center;">
+                    <input type="submit" value="enviar">
+                </div>    
+            </fieldset>  
+        </form>
+    </article>
+    <br><br><br><hr>
+    <footer>
+        <small>by Beatriz Cavalcante &copy;</small>
+    </footer>
+</body>
+</html>

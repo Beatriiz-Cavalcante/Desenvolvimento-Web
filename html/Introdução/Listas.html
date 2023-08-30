@@ -1,0 +1,107 @@
+<!DOCTYPE html lang='pt-Br'>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Listas</title>
+    </head>
+    <body>
+        <h3>Exemplo página 50</h3>
+        <h1>Elemento de listas ordenadas</h1>
+        <p>Lista numerada normal:</p>
+        <ol>
+            <li>São Paulo</li>
+            <li>Minas Gerais</li>
+            <li>Rio de Janeiro</li>
+        </ol>
+        <p>Lista numerada invertida com o valor inicial 10:</p>
+        <ol reversed start="10">
+           <li>São Paulo</li>
+           <li>Minas Gerais</li>
+           <li>Rio de Janeiro</li>
+        </ol>
+        <p>Lista alfabética maiúscula:</p>
+        <ol type="A">
+            <li>São Paulo</li>
+           <li>Minas Gerais</li>
+           <li>Rio de Janeiro</li>
+        </ol>
+        <p>Lista alfabética minúscula:</p>
+        <ol type="a">
+            <li>São Paulo</li>
+           <li>Minas Gerais</li>
+           <li>Rio de Janeiro</li>
+        </ol>
+        <!--Aqui começa lista não ordenada--> 
+        <h1>Elemento de lista não ordenada</h1> 
+        <p>Bebidas preferidas</p>
+        <!--Para agilizar  ul<li ENTER desse modo cria a lista já com item dentro -->  
+            <ul>
+                <li>Café</li>
+                <li>Chá</li>
+                <li>Leite</li>
+            </ul>
+            <!--Caso queria colocar mais de um item é só especificar ul>li*"NÚMERO QUE DESEJAR"-->
+            <p>Cidades de Pernambuco</p>
+            <ul type="square">
+                <li>Recife</li>
+                <li>Olinda</li>
+                <li>Jaboatão</li>
+            </ul>
+            <p>Estador do Brasil</p>
+            <ul type="circle">
+                <li>PE</li>
+                <li>SP</li>
+                <li>RJ</li>
+            </ul>
+            <p>Cores primárias</p>
+            <ul>
+                <li>Vermelho</li>
+                <li>Verde</li>
+                <li>Azul</li>
+            </ul>
+        <hr>
+        <h3>Exemplo página 55</h3>
+        <!--Lista de descrição tem 3 componentes: <dl> 'folha', <dt> </dt> 'item', <dd> </dd> 'descrição do item'-->
+        <h1>Elemento listas de descrição</h1>
+        <dl>
+            <dt>TCP</dt>
+              <dd>Transmission Control Protocol é um protocolo usado junto com o protocolo de Internet(IP) para enviar
+                 dados na forma de unidades de mensagem, chamadas de pacotes, entre computadores pela Internet</dd>
+            <dt>IP</dt>
+              <dd>Internet Protocol is um protocolo pelo qual dados são enviados de um computador para outro na Internet. 
+                Cada computador na Internet é identificado poe um endereço de IP único.</dd>
+            <dt>FTP</dt>    
+              <dd>File Transfer Protocol é um protocolo usado para troca de arquivos entre computador na Internet.</dd>
+            <dt>HTTP</dt>
+              <dd>Hypertext Transfer Protocol é um protocolo usado para trocas de arquivos de texto, 
+                imagens gráficas, som, vídeo e outros tipos de multimídias na rede. </dd>
+        </dl>
+        <hr>
+        <!--aqui começa Lista aninhada-->
+        <h3>Exemplo págia 57/58</h3>
+        <h1>Elemento lista Aninhada</h1>
+        <p>Listas não ordenadas aninhadas</p>
+        <ul>
+            <li>São Paulo</li>
+            <li>Minas Gerais
+                <ul>
+                    <li>Belo Horizonte</li>
+                    <li>Tiradentes</li>
+                </ul>
+            </li>
+            <li>Pernambuco</li>
+        </ul>
+        <p>Lista de tipos diferentes aninhadas</p>
+        <ol>
+            <li>Café</li>
+            <li>Chá
+                <ul>
+                    <li>Preto</li>
+                    <li>Verde</li>
+                </ul>
+            </li>
+            <li>Leite</li>
+        </ol>
+    </body>
+</html>
