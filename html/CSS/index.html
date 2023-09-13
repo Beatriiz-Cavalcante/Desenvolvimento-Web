@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engatinhando com CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /*CSS embedded*/
+        /*Seletor é o nome ou id de uma <tag>*/
+        h4 {
+            color: blue;
+            background-color: purple;
+            border-style: solid;
+            border-width: 2px;
+            border-color: white;
+        }
+        /*Nível de especificação*/
+        section p {
+            color: palevioletred;
+            text-align: center;
+            border-style: solid;
+            border-color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body style="background-color: rgb(73, 67, 67);">
+    <h1>CSS - Browser - Herança 5 posição</h1>
+    <h2>CSS - User.Style - Herança 4 posição</h2>
+    <h3>CSS - External - Herança 3 posição</h3>
+    <h4>CSS - Embedded - Herança 2 posição</h4>
+    <h5 style="color: red; font-size: 1.5rem;">CSS - Inline - Herança 1 posição</h5>
+    
+    <p style="text-align: right; color: aqua;">Esse parágrafo está possuído pelo estilo inline</p>
+    <p>Esse parágrafo não</p>
+
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe reprehenderit laboriosam perferendis veritatis atque id consequuntur
+             laborum consectetur maiores, et necessitatibus, aut, debitis quod. Veritatis sequi excepturi molestias doloremque ipsum?</p>
+    </section>
+
+    <ul>
+        <li>Browser</li>
+        <li style="font-size: 25px; color: yellowgreen;">Inline</li>
+        <li><a href="#">chama</a></li>
+    </ul>
+    <a href="#">Embedded</a>
+    <br>
+    <a href="#">Mais um a</a>
+    <p id="escolhido">Esse parágrafo é o escolhido</p>
+    <p>Já esse é normalzinho, acontece hihi</p>
+    <hr>
+    <footer>
+        by Beatriz Cavalcante &copy;
+    </footer>
+</body>
+</html>
