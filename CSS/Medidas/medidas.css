@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body {
+    font-size: 10px;
+}
+section#primeira {
+    background-color: aqua;
+}
+.primeiro-bloco {
+    font-size: 0.5em;
+    background-color: chartreuse;
+}
+.Segundo-bloco {
+    font-size: 0.75em;
+    background-color: aqua;
+}
+.terceiro-bloco {
+    font-size: 1em;
+    background-color: chartreuse;
+}
+.quarto-bloco {
+    font-size: 1.25em;
+    background-color: aqua;
+}
+.quinto-bloco {
+    font-size: 1.5em;
+    background-color: chartreuse;
+}
+.sexto-bloco {
+    font-size: 1.75em;
+    background-color: aqua;
+}
