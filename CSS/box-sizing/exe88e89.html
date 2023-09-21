@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo box-sizing</title>
+    <style>
+        .section1 {
+            width: 300px;
+            height: 200px;
+            border: 1px solid blue;
+        }
+        .section2 {
+            width: 300px;
+            height: 200px;
+            padding: 50px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <section class="section1">
+        Esse elemento section foi configurado com largura 300px e altura 200px
+    </section>
+    <br>
+    <section class="section2">Esse elemento section foi configurado com largura 300px e altura 200px
+        , mas o navegador está calculando largura total - 351 (widht - 300 + padding- 50 + border=1)
+        e altura total = 251 (height=200 + padding = 50 + border = 1).
+    </section>
+</body>
+</html>

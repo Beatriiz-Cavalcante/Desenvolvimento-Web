@@ -1,0 +1,25 @@
+section {
+    border: 1px solid #349bf4;
+}
+div {
+    border: 1px solid black;
+    width: 60px;
+    height: 80px;
+    margin: 1rem;
+}
+.esquerda {
+    background-color: blueviolet;
+    float: left;
+}
+.meio {
+    background-color: aqua;
+    float: left;
+}
+.direita {
+    background-color: tomato;
+    float: left;
+}
+.cancela {
+    clear: both;
+}
+
