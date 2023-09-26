@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serifS;
+}
+body {
+    background-color: #f4f4f4;
+    color: #555;
+    line-height: 1.6em;
+}
+.container {
+    width: 80vw;
+    margin: 4rem 10%;
+    
+}
+/*Quando utilizo o * junto a outro seletor ele indica que devemos aplicar a mudança para todos os filhos do seletor*/
+.box * {
+    padding-bottom: 0.5rem;
+}
+.box span {
+    padding-left: 8px;
+}
+.btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    text-decoration: none;
+    border-radius: 2px;
+}
+.btn:hover {
+    background-color: rgba(3, 3, 80, 0.595);
+}
+.categorias {
+    border: 1px solid gray;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 10px;
+   
+}
+.categorias h2{
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    
+}
+li {
+    text-decoration: none;
+    border-bottom: 1px dotted gray;
+    padding-top: 2px;
+    padding-bottom: 4px;
+   
+}
+li a {
+    text-decoration: none;
+    color: #333;
+}
+/*pseudoelementos*/
+p::first-letter {
+    font-size: 200%;
+    font-family: serif;
+    color: #abcdef;
+}
+/*pseudoelemento não depende da interação do usuário para fazer a mudança desejada
+já a pseudoclasse simm*/
+/*pseudoclasse seletor:nomeaçao*/
+/*pseudoelemento seletor::nomeaçao*/
+.categorias h2::after {
+    content: '🐽';
+}
+li a::before {
+    content: '→';
+}
