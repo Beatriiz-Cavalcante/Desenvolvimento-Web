@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulariozinho</title>
+</head>
+<body>
+    <h1>Suas infos</h1>
+    <h3 class="nome">Seu nome é:</h3>
+    <h3 class="Idade">Sua idade é:</h3>
+    <h3 class="signo">Seu signo é:</h3>
+    <h3>Contatos</h3>
+    <ul>
+        <li class="numero">Seu número:</li>
+        <li class="email">Seu email é:</li>
+    </ul>
+    <script>
+        var nome = prompt('Qual o seu nome?');
+        var idade = prompt('Qual sua idade?');
+        var signo = prompt('Qual seu signo?');
+        var numero = prompt('Qual seu número de telefone?');
+        var email = prompt('Qual seu email?');
+
+        var imprimeN = document.querySelector('.nome');
+        imprimeN.innerHTML ='Seu nome é: ' + nome;
+
+        var imprimeI = document.querySelector('.Idade');
+        imprimeI.innerHTML = 'Sua idade é: ' + idade;
+
+        var imprimeS = document.querySelector('.signo');
+        imprimeS.innerHTML = 'Seu número é: ' + signo;
+
+        var imprimeN = document.querySelector('.numero');
+        imprimeN.innerHTML = 'Seu número é: ' + numero;
+
+        var imprimeE = document.querySelector('.email');
+        imprimeE.innerHTML = 'Seu email é: ' + email;
+
+    </script>
+    </script>
+</body>
+</html>
