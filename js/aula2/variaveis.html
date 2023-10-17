@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .baby {
+            width: 300px;
+            height: 200px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        /*Declarando variáveis*/
+        var acessoGlobal; //é o tipo que pode ser acessada em todo o programa
+        let acessoLocal //Pode ser acessada apenas no escopo em que nasceu
+        const naoMuda = 'esse valor é imutável'; //não pode ser alterada 
+        //pode declarar mais de uma em apenas uma linha
+        let nome, idade, altura;
+        //pode declarar e já atribuir valores
+        let num1=3, num2=6, num3=12;
+        var txt1='que', txt2='calor', txt3='danado';
+        const cachorro = 'auau';
+        //window.document.write(txt1 + ' ' + cachorro);  <-- essa soma é concatenação
+
+        nome = prompt('Diga seu nome:');
+        idade = prompt('Diga sua idade:')
+
+        window.document.write('<h1>Salvee,'+ ' ' + nome +' !</h1>')
+        //modo abreviado
+        
+        document.write(nome + ', você tem ' + idade + ' ' + 'anos de idade' + '<br>');
+        document.write('<br>');
+        document.write('Clique na imagem para saber quantos filhos você vai ter'+'<br>'+'<br>'+'<br>');
+        document.write('<img class="baby" src="crianças.jfif"/>');
+
+        let imgClique = document.querySelector('.baby');
+        imgClique.addEventListener('click', function(){
+            let qntFilhos = Math.floor(Math.random()*10);
+            document.write(nome + ',apesar de ter' + ' ' + idade + ' ' + 'anos,');
+            document.write('<br> Você terá' + ' ' + qntFilhos + ' ' + 'filhos correndo atrás de você.');
+            document.write('<br> HAHAHA!')
+        });
+       
+    </script>
+</body>
+</html>
