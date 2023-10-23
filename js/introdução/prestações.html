@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestações</title>
+</head>
+<body>
+    <script>
+        var nome = prompt("Informe seu nome:");
+        var produtos = prompt("Qual produto você comprou?");
+        var valor = Number( prompt("Qual o valor total da sua compra?"));
+        var parcelas = Number(prompt("Comprou parcelado? Em quantas parcelas?"));
+
+        var valorParcelado = valor / parcelas;
+        var juros = valorParcelado * (10/100);
+        var novaParcela = valorParcelado + juros;
+        var valorTotal = novaParcela * parcelas;
+
+        document.write(`Você pagará ${parcelas} parcelas de R$ ${novaParcela} <br> Valor total: ${valorTotal}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saque Santander</title>
+</head>
+<body>
+    <script>
+       var nome = prompt("Qual o seu nome:");
+       var deposito = prompt("Qual o valor do seu depósito?");
+       var saque = prompt("Qual valor você quer sacar?");
+        if (deposito < saque){
+            var saque = prompt(`Saldo indisponível. Digite um valor menor que ${deposito}`);
+        } else {
+            alert("Calma ae");
+        }
+        document.write("Nome: "+ nome);
+        document.write("<br>");
+        document.write("Valor depositado:" +deposito);
+        document.write("<br>");
+        document.write("Valor retirado:"+saque);
+        document.write("<br>");
+        var saldo = deposito - saque;
+        document.write("Saldo em conta:" +saldo);
+    </script>
+</body>
+</html>
