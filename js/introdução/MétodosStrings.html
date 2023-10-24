@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos String</title>
+</head>
+<body>
+    <script>
+        //declaração de variáveis
+        let salve, txt1, rima, rap;
+        //iniciar varaáveis
+        salve = 'Olá, vamos começar a aprender JavaScript';
+        txt1 = 'Algum textinho para testar aqui';
+        rima = 'Não sei rimar, nem improvisar. É isto :)';
+        rap = 'Tentativas em vão tentar tirar você do coração';
+        //apresentar conteúdo no documento
+        //modelo antigo
+        document.write(salve + ' ' + txt1);
+        document.write('<br><br>');
+        //modelo atualizado (template string) que dá a possibilidade de interpolação
+        document.write(`${salve} com o IOS`); 
+        document.write('Olhe no console');
+
+        //Métodos de String
+
+        //length retorna a quantidade de caracteres de um texto
+        console.log(salve.length); 
+        console.log(txt1.length);
+        console.log(rima.length);
+        console.log(rap.length);
+
+        //Substring retorna parte selecionada da string
+        console.log(salve.substring(0,3));
+
+        //Split separa a frase em palavras, retornando um array de acordo com a regra passada, utilizando um caractere como divisor 
+        console.log(rap.split(' '));
+        let novoTxt = rima.split(' ');
+        console.log(novoTxt);
+        console.log(novoTxt[2]);    
+        
+        //replace substitui um pedaço específico da string por outra coisa que você desejar
+        console.log(txt1.replace('Algum', 'Não acho um'));
+
+        //trim remove os espaços os espaços em branco do início de o final de uma string
+        let espaco= '   oi, cara de boi!   ';
+        console.log(espaco.trim());
+        console.log(espaco);
+
+        //
+    </script>
+</body>
+</html>
