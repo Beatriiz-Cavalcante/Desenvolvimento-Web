@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura Condicional</title>
+</head>
+<body>
+    <h1>Estrututa Condicional</h1>
+    <script>
+        //Verificação de Números
+        var num1 = Number(prompt("Digite um número"));
+        if (num1>0){
+            console.log(`O número ${num1} é positivo`);
+        }
+        if (num1 == 0) {
+            console.log(`O número ${num1} é igual a 0`);
+        }
+        if (num1<0){
+            console.log(`O número ${num1} é negativo`);
+        }
+
+        //Verificação de idade
+        var idade = prompt("Informe sua idade");
+        if (idade>=18 && idade<60){
+            console.log("Você é maior de idade");
+        }
+        if (idade < 18) {
+            console.log("Você é menor de idade");
+        }
+        if(idade>=60) {
+            console.log("Ihh, você já é uma pessoa idosa, procure o INSS!")
+        }
+
+        //Validação de Senhas
+        var senha = prompt("Insira a sua senha");
+        if(senha.length < 8){
+            console.log("Senha inválida. Para que a senha seja aceita deve ter mais de 8 caracteres!");
+        } else {
+            console.log("Senha salva com sucesso!");
+        }
+
+        //Classificação de Números
+        var num2 = Number(prompt("Digite um número")); 
+        var num3 = Number(prompt("Digite  mais um número"));
+        var num4 = Number(prompt("Digite  mais um número"));
+        if (num2 < num3 && num3 < num4) {
+            console.log(`Os números em ordem crescente ficam assim: ${num2}, ${num3},  ${num4}`);
+        }
+        if (num3 < num2 && num2 < num4) {
+            console.log(`Os números em ordem crescente ficam assim: ${num3}, ${num2},  ${num4}`);
+        }
+        if (num3 < num4 && num4 < num2) {
+            console.log(`Os números em ordem crescente ficam assim: ${num3}, ${num4},  ${num2}`);
+        }
+        if (num4 < num3 && num3 < num2) {
+            console.log(`Os números em ordem crescente ficam assim: ${num4}, ${num3},  ${num2}`);
+        }
+        if (num2 < num4 && num4 < num3) {
+            console.log(`Os números em ordem crescente ficam assim: ${num2}, ${num4},  ${num3}`);
+        }
+        
+        //Verificação de par ou impar
+        var num5 = Number(prompt("Digite um número")); 
+        if (num5 % 2 == 0){
+            console.log(`O número ${num5} é par`);
+        } else {
+            console.log(`O número ${num5} é impar`);
+        }
+
+        //Seleção de Bebidas
+        if (idade>=18){
+            console.log(`Sua idade é ${idade}, logo, você já pode tomar bebida alcoólica`);
+        } else {
+            console.log(`Você tem ${idade}, vai tomar todynho`);
+        }
+    </script>
+</body>
+</html>
