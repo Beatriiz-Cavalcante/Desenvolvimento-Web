@@ -1,0 +1,82 @@
+
+        <!DOCTYPE html>
+        <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+        </head>
+        <body>
+            <h1>Qual sua Pontuação?</h1>
+            <div class="content"></div>
+            <script>
+                //Estrutura de repetição (while)
+                  var senha = prompt("Insira a sua senha");
+                 while(senha.length<8){
+                     senha=prompt("Insira uma senha válida");
+                  }
+                 alert(`A senha salva foi ${senha}`);
+                 console.log(`${senha}`);
+
+                 //Difwerença while -- Do While
+                 console.clear();
+                 let i = 10,
+                 text = '';
+                 do {
+                    text += `O número é ${i}\n`;
+                    i++;
+                 } while (i < 10);
+                 console.log(text);
+
+                 var num1=1;
+                 text2 = '';
+                 while(num1<=10){
+                    text2 += `O número é ${num1}\n`;   
+                    num1=num1 + 1;         
+                 }
+                 console.log(text2);
+
+                 //Calculadora 
+                 let escolha
+                 escolha = Number(prompt("Escolha uma operação:\n1.Adição\n2.Subtração\n3.Multiplicação\n4.Divisão"));
+                 if(escolha ==1){
+                    var num1 = Number(prompt("Informe um número"));
+                    var num2 = Number(prompt("Informe outro número"));
+                    var result = num1 + num2;
+                    alert(`${num1} + ${num2} = ${result}`);
+                 }
+                 else if(escolha ==2){
+                    var num1 = Number(prompt("Informe um número"));
+                    var num2 = Number(prompt("Informe outro número"));
+                    var result = num1 - num2;
+                    alert(`${num1} - ${num2} = ${result}`);
+                 }
+                 else if(escolha ==3){
+                    var num1 = Number(prompt("Informe um número"));
+                    var num2 = Number(prompt("Informe outro número"));
+                    var result = num1 * num2;
+                    alert(`${num1} * ${num2} = ${result}`);
+                 }
+                 else if(escolha ==4){
+                    var num1 = Number(prompt("Informe um número"));
+                    var num2 = Number(prompt("Informe outro número"));
+                    var result = num1 / num2;
+                    alert(`${num1} / ${num2} = ${result}`);
+                 } 
+                 else {
+                    alert("Número inválido");
+                 }
+
+                 //Escrevendo na tela com JavaScript
+                 const placar = document.querySelector('.content');
+                 let score = +prompt('Qual a sua pontuação?');
+                 if (score > 1000) {
+                    placar.innerHTML = "Você passou para a fase 2 :) ";
+                 } else {
+                    placar.innerHTML = "Melhore sua pontuação para passar para a fase 2 :((";
+                 }
+            </script>
+        </body>
+        </html>
+        
+        
